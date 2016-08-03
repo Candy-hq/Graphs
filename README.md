@@ -2,4 +2,4 @@
 ## 核心内容:通过BezierPath 结合 CAShapeLayer 实现曲线
 ##         通过CAGranderLayer 实现了颜色的填充和渐变
 ##  下面是效果图
-![](/Users/Netho/Desktop/BezierPath/曲线.png)
+![](https://raw.githubusercontent.com/candy7/-/master/%E6%9B%B2%E7%BA%BF.png)
