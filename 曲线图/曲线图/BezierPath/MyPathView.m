@@ -141,7 +141,7 @@
             {
                 UILabel *label = [UILabel initWithFrame:(CGRectMake(point.x + 45, self.height + 10, xSpace * 6, 20)) font:14 color:[UIColor whiteColor] text:[NSString stringWithFormat:@"%d:00",i / 6]];
                 label.centerX = point.x + 40;
-                [self addSubview:label];
+//                [self addSubview:label];
                 [self.labelArr addObject:label];
             }
         }
@@ -372,7 +372,6 @@
     animation.toValue = @1;
     animation.duration = self.animationDuration;
     animation.delegate = self;
-    
     [self.layer addAnimation:animation forKey:@"BezierPath"];
     for (BezierBtn *btn in self.buttonsArr)
     {
@@ -437,8 +436,7 @@
     self.detailView.center = point;
 
     // label的文字
-    self.detailView.titleLB.text = [NSString stringWithFormat:@"%@ %@", [self.dataArr objectAtIndex:_currentTag - 2000],self.type];
-//    self.detailView.detailLB.text = @"轻度测试";
+    self.detailView.titleLB.text = [NSString stringWithFormat:@"%@", [self.dataArr objectAtIndex:_currentTag - 2000]];
 
     self.detailView.transform = CGAffineTransformMakeScale(0, 0);
     
